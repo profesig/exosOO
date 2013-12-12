@@ -19,7 +19,7 @@
 			<applet_ref/>
 			<debugger_ref/>
 			<param/>
-			<run/>
+			<run>version1.ExosOO_version1</run>
 			<verify>true</verify>
 		</runtime>
 	</runtimes>
@@ -29,11 +29,29 @@
 			<folderitem>
 				<path>src</path>
 			</folderitem>
+			<folderitem>
+				<path>src\version1</path>
+			</folderitem>
 			<fileitem>
-				<path>src\ExosOO.java</path>
-				<folder>src</folder>
+				<path>src\version1\Account.java</path>
+				<folder>src\version1</folder>
+			</fileitem>
+			<fileitem>
+				<path>src\version1\BankingSystem.java</path>
+				<folder>src\version1</folder>
+			</fileitem>
+			<fileitem>
+				<path>src\version1\ExosOO_version1.java</path>
+				<folder>src\version1</folder>
 			</fileitem>
 		</include>
 	</files>
-	<tasks/>
+	<tasks>
+		<todotaskitem>
+			<description>TODO, add your application code</description>
+			<filepath>src\version1\ExosOO.java</filepath>
+			<line>18</line>
+			<timestamp>1386867990</timestamp>
+		</todotaskitem>
+	</tasks>
 </project>

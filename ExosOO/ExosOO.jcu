@@ -14,6 +14,9 @@
 			<folderitem>
 				<path>src</path>
 			</folderitem>
+			<folderitem>
+				<path>src\version1</path>
+			</folderitem>
 		</project>
 	</projects>
 </workspace_user>
