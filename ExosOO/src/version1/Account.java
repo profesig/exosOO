@@ -2,8 +2,9 @@ package version1;
 
 
 class Account {
-	String noCompte;
-	float solde;
+	
+	private String noCompte;
+	private float solde;
 	
 	Account(String noCompte, float solde) {
 		this.noCompte = noCompte;
