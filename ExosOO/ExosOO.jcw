@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspace>
+	<settings>
+		<label>ExosOO</label>
+	</settings>
+	<users>
+		<user>
+			<path>ExosOO.jcu</path>
+		</user>
+	</users>
+	<projects>
+		<project>
+			<path>ExosOO.jcp</path>
+		</project>
+	</projects>
+</workspace>
