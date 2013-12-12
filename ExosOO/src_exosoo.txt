@@ -1,3 +1,0 @@
-"C:\\Documents and Settings\\STEINLEM-ESIG\\Mes documents\\exosOO\\ExosOO\\src\\version1\\Account.java"
-"C:\\Documents and Settings\\STEINLEM-ESIG\\Mes documents\\exosOO\\ExosOO\\src\\version1\\BankingSystem.java"
-"C:\\Documents and Settings\\STEINLEM-ESIG\\Mes documents\\exosOO\\ExosOO\\src\\version1\\ExosOO_version1.java"
