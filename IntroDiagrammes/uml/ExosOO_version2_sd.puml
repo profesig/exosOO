@@ -27,7 +27,6 @@ BankingSystem -> Account1 : toString()
 BankingSystem -> Account2 : toString()
 deactivate BankingSystem
 
-BankingSystem --> Main
 deactivate BankingSystem
 
 deactivate Main
