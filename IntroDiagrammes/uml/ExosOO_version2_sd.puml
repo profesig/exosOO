@@ -1,0 +1,40 @@
+@startuml
+participant Main as "ExosOO_version1"
+participant BankingSystem as ":BankingSystem"
+participant Account1 as "account1:Account"
+participant Account2 as "account2:Account"
+
+activate Main
+
+create BankingSystem
+Main -> BankingSystem : new()
+activate BankingSystem
+create Account1
+BankingSystem -> Account1 : new(accountNumber="c1", balance="300.0")
+create Account2
+BankingSystem -> Account2 : new(accountNumber="c2", balance="200.0")
+deactivate BankingSystem
+
+Main -> BankingSystem : transfer(\n amount=50.0, \n debitAccountNumber="c1",\n creditAccountNumber="c2")
+activate BankingSystem
+
+BankingSystem -> BankingSystem : printBefore(amount, debitAccountNumber, creditAccountNumber)
+
+BankingSystem -> Account1 : debit(amount)
+activate Account1
+Account1 --> BankingSystem
+deactivate Account1
+
+BankingSystem -> Account2 : credit(amount)
+activate Account2
+Account2 --> BankingSystem
+deactivate Account2
+
+BankingSystem -> BankingSystem : printAfter()
+
+BankingSystem --> Main
+deactivate BankingSystem
+
+deactivate Main
+
+@enduml

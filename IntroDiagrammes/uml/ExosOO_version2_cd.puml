@@ -1,0 +1,30 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class ExosOO_version2 {
+{static} main(args:String[]):void
+}
+
+class BankingSystem {
+BankingSystem()
+transfer(amount:float, debitAccountNumber:String, creditAccountNumber:String):void
+printBefore(amount:float, debitAccountNumber:String, creditAccountNumber:String):void
+printAfter():void
+}
+
+class Account {
+
+accountNumber:String
+balance:float
+
+Account(accountNumber:String, balance:float)
+credit(amount:float):void
+debit(amount:float):void
+toString():String
+}
+
+BankingSystem --> "1" Account : account1
+BankingSystem --> "1" Account : account2
+ExosOO_version2 .> BankingSystem : <<create>>
+
+@enduml
