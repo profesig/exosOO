@@ -23,13 +23,13 @@ class BankingSystem {
     }
 
     private void printBefore(float amount, String debitAccountNumber, String creditAcccountNumber) {
-        System.out.println("Nous allons virer un montant de " + amount + " du compte " + debitAccountNumber + " Ã  " + creditAcccountNumber);
-        System.out.println("Etat des comptes avant l'opÃ©ration:");
+        System.out.println("Nous allons virer un montant de " + amount + " du compte " + debitAccountNumber + " à  " + creditAcccountNumber);
+        System.out.println("Etat des comptes avant l'opération:");
         accountManager.printAccounts();
     }
 
     private void printAfter() {
-        System.out.println("Etat des comptes aprÃ¨s l'opÃ©ration:");
+        System.out.println("Etat des comptes après l'opération:");
         accountManager.printAccounts();
         System.out.println("=============");
     }

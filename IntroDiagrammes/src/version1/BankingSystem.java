@@ -12,15 +12,15 @@ class BankingSystem {
     }
 
     void transfer(float amount, String debitAccountNumber, String creditAcccountNumber) {
-        System.out.println("Nous allons virer un montant de " + amount + " du compte " + debitAccountNumber + " Ã  " + creditAcccountNumber);
-        System.out.println("Etat des comptes avant l'opÃ©ration:");
+        System.out.println("Nous allons virer un montant de " + amount + " du compte " + debitAccountNumber + " à  " + creditAcccountNumber);
+        System.out.println("Etat des comptes avant l'opération:");
         System.out.println(account1.toString());
         System.out.println(account2.toString());
 
         account1.debit(amount);
         account2.credit(amount);
 
-        System.out.println("Etat des comptes aprÃ¨s l'opÃ©ration:");
+        System.out.println("Etat des comptes après l'opération:");
         System.out.println(account1.toString());
         System.out.println(account2.toString());
     }
