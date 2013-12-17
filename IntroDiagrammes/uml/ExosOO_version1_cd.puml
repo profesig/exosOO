@@ -1,4 +1,4 @@
-@startuml
+ @startuml
 skinparam classAttributeIconSize 0
 
 class ExosOO_version1 {
@@ -7,19 +7,19 @@ class ExosOO_version1 {
 
 class BankingSystem {
 BankingSystem()
-transfer(amount:float, debitAccountNumber:String, creditAccountNumber:String):void
+transfer(amount:double, debitAccountNumber:String, creditAccountNumber:String):void
 
 }
 
 class Account {
 
 accountNumber:String
-balance:float
+balance:double
 
-Account(accountNumber:String, balance:float)
-credit(amount:float):void
-debit(amount:float):void
-toString():String
+Account(accountNumber:String, balance:double)
+credit(amount:double):void
+debit(amount:double):void
++toString():String
 }
 
 BankingSystem --> "1" Account : account1
