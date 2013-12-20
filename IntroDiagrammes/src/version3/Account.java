@@ -4,9 +4,9 @@ package version3;
 class Account {
 
     private String accountNumber;
-    private float balance;
+    private double balance;
 
-    Account(String accountNumber, float balance) {
+    Account(String accountNumber, double balance) {
         this.accountNumber = accountNumber;
         this.balance = balance;
     }
@@ -15,11 +15,11 @@ class Account {
         return accountNumber;
     }
 
-    void credit(float amount) {
+    void credit(double amount) {
         balance = balance + amount;
     }
 
-    void debit(float amount) {
+    void debit(double amount) {
         balance = balance - amount;
     }
 
