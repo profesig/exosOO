@@ -22,7 +22,7 @@ class AccountManager {
 
     void printAccounts() {
         for (Account account : accounts) {
-            System.out.println(account);
+            System.out.println(account.toString());
         }
     }
 }
