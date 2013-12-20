@@ -1,0 +1,59 @@
+@startuml
+participant Main as "ExosOO_version3"
+participant BankingSystem as ":BankingSystem"
+participant AccountManager as ":AccountManager"
+participant AnAccount as "a:Account"
+participant DebitAccount as "debitAccount:Account"
+participant CreditAccount as "creditAccount:Account"
+
+activate Main
+
+Main -> BankingSystem : transfer(amount,debitAccountNumber,creditAccountNumber)
+activate BankingSystem
+
+BankingSystem -> BankingSystem : printBefore(amount,debitAccountNumber, creditAccountNumber)
+activate BankingSystem
+BankingSystem -> AccountManager : printAccounts()
+
+loop for each Account a in accounts
+activate AccountManager
+AccountManager -> AnAccount : toString()
+deactivate AccountManager
+end loop
+
+deactivate BankingSystem
+
+BankingSystem -> AccountManager: debitAccount := findAccount(debitAccountNumber)
+activate AccountManager
+loop for each Account a in accounts
+AccountManager -> AnAccount : getAccountNumber()
+deactivate AccountManager
+end loop
+
+BankingSystem -> AccountManager: creditAccount := findAccount(creditAccountNumber)
+activate AccountManager
+loop for each Account a in accounts
+AccountManager -> AnAccount : getAccountNumber()
+deactivate AccountManager
+end loop
+
+BankingSystem -> DebitAccount : debit(amount)
+BankingSystem -> CreditAccount : credit(amount)
+
+BankingSystem -> BankingSystem : printAfter()
+activate BankingSystem
+BankingSystem -> AccountManager : printAccounts()
+
+loop for each Account a in accounts
+activate AccountManager
+AccountManager -> AnAccount : toString()
+deactivate AccountManager
+end loop
+
+deactivate BankingSystem
+
+deactivate BankingSystem
+
+deactivate Main
+
+@enduml
