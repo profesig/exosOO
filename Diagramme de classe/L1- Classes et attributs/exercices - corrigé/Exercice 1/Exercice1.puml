@@ -1,0 +1,22 @@
+@startuml
+class Client{
+  nom: String
+  prenom: String
+  adresse: String
+  dateInscription: Date 
+  dateDeNaissance: Date
+}
+
+class Produits{
+   numeroProduit: int
+   nomProduit: String
+   prix: double
+   categorieProduit[1..*]: String
+}
+
+class Commandes{
+   numeroCommande: int
+   dateCommande: Date
+   quantiteCommande: int
+}
+@enduml
