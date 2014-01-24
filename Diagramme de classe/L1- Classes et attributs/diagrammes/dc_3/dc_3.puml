@@ -1,6 +1,6 @@
 @startuml
 class MyClass {
-	myMultivaluedAttribute1:String[]
-	myMultivaluedAttribute2:double[]
+	myMultivaluedAttribute1[0..*]:String
+	myMultivaluedAttribute2[1..*]:double
 }
 @enduml
