@@ -1,0 +1,7 @@
+@startuml
+class MyClass {
+	myAttribute1:String
+	myAttribute2:double
+	myAttribute3:int
+}
+@enduml

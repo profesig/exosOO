@@ -1,0 +1,6 @@
+@startuml
+class MyClass {
+	myMultivaluedAttribute1:String[]
+	myMultivaluedAttribute2:double[]
+}
+@enduml
