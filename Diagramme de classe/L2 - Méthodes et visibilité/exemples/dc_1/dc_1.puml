@@ -1,0 +1,7 @@
+@startuml
+class Produit {
+prix:double
+getPrix():double
+setPrix(nouveauPrix:double):void
+}
+@enduml
