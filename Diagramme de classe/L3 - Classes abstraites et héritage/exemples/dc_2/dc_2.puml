@@ -1,0 +1,18 @@
+@startuml
+
+abstract class Command {
+
+}
+
+class GetBalance {
+
+}
+
+class GetAccountHistory {
+
+}
+
+Command <|-- GetBalance
+Command <|-- GetAccountHistory
+
+@enduml
