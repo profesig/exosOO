@@ -1,0 +1,8 @@
+@startuml
+
+hide members
+class Vol
+class Avion
+Vol "*" -- "1" Avion : réserve >
+
+@enduml

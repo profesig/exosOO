@@ -1,0 +1,11 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Chambre {
+    -longueur:double
+    -largeur:double
+    +Chambre(longueur:double, largeur:double)
+}
+
+
+@enduml

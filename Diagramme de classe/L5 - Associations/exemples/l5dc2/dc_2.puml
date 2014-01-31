@@ -1,0 +1,13 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Vol {
+- placesReservees:int
++ placesDisponibles():int
+}
+class Avion {
+- capacitePassagers:int
++ getCapacitePassagers():int
+}
+Vol "*" -> "1" Avion
+
+@enduml
