@@ -1,0 +1,30 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Vol {
+- nomVol:String
++ Vol(nomVol:String,pilote:Employe,coPilote:Employe)
++ afficherPilotes():void
++ afficherPassagers():void
++ addPassager(passager:Client)
+}
+
+class Employe {
+  - numeroEmploye:int
+  - nom:String
+  + Employe(numeroEmploye:int, nom:String)
+  + getNom():String
+  + getNumeroEmploye():int
+}
+
+class Client {
+  - nom:String
+  + Client(nom:String)
+  + getNom():String
+}
+
+Vol "*" -> "1\npilote" Employe
+Vol "*" -> "1\nco-pilote" Employe
+Vol "*" --> "* passagers" Client
+
+@enduml

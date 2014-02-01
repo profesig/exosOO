@@ -1,0 +1,21 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Vol {
+- nomVol:String
++ Vol(nomVol:String,pilote:Employe,coPilote:Employe)
++ afficherPilotes():void
+}
+
+class Employe {
+  - numeroEmploye:int
+  - nom:String
+  + Employe(numeroEmploye:int, nom:String)
+  + getNom():String
+  + getNumeroEmploye():int
+}
+
+Vol "*" -> "1\npilote" Employe
+Vol "*" -> "1\nco-pilote" Employe
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+hide members
+
+class Vol
+class Aeroport
+
+Vol "*" -> "arrivee" Aeroport
+Vol "*" -> "depart" Aeroport
+
+@enduml
