@@ -6,7 +6,7 @@ class Vol {
 + Vol(nomVol:String,pilote:Employe,coPilote:Employe)
 + afficherPilotes():void
 + afficherPassagers():void
-+ addPassager(passager:Client)
++ setPassagers(passager[0..*]:Client):void
 }
 
 class Employe {

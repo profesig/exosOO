@@ -1,0 +1,10 @@
+@startuml
+
+namespace com.mycompany {
+  class MyClass
+}
+
+
+
+
+@enduml

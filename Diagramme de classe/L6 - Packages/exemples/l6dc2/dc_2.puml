@@ -1,0 +1,19 @@
+@startuml
+
+namespace com.thebank.smspay {
+
+  class Client
+
+  namespace commands {
+
+    abstract class Command
+    class Transfer extends Command
+
+  }
+
+}
+
+
+
+
+@enduml~
